@@ -1,5 +1,103 @@
+/* RESET  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* PAGINA  */
+.container {
+    max-width: 1024px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: 100px;
+}
+
+/* SEZIONE INTESTAZIONE */
+header {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* SEZIONE PRINCIPALE  */
+.slide {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/* SEZIONE CON COLONNE  */
+.col {
+    margin-bottom: 10px;
+}
+
+.col div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.col div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.col--0 {
+    width: 100%;
+    height: 80px;
+}
+
+.col--1, .col--3 {
+    width: 200px;
+    height: 380px;
+}
+
+.col--2 {
+    width: calc(100% - 40px - 200px - 200px);
+    height: 380px;
+}
+
+/* CLEARFIX  */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* SEZIONE FOOTER  */
+footer {
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+/* DEBUG  */
+.container.debug {
+    /* border: 1px solid black; */
+}
+
+.debug header {
+    background-color: pink;
+}
+
+.debug .slide {
+    background-color: palegoldenrod;
+}
+
+.debug .col {
+    background-color: blue;
+}
+
+.debug .col div {
+    background-color: rgb(64, 197, 197);
+}
+
+.debug footer {
+    background-color: purple;
 }
